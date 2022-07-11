@@ -1,0 +1,2 @@
+# GestioneSagre.Addons
+Modulo Addons
