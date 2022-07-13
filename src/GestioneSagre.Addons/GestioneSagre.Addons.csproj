@@ -18,7 +18,6 @@
         <PackageTags>gestione sagre addons csharp net netcore web opensource</PackageTags>
         <PackageIcon>Library.png</PackageIcon>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
-        <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <RepositoryType>git</RepositoryType>
         <RepositoryUrl>https://github.com/GestioneSagre/GestioneSagre.Addons</RepositoryUrl>
