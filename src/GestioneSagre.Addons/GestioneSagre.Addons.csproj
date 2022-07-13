@@ -34,7 +34,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="GestioneSagre.Email" Version="1.0.4" />
+        <PackageReference Include="GestioneSagre.Email" Version="1.0.5" />
         <PackageReference Include="GestioneSagre.Image" Version="1.0.5" />
         <PackageReference Include="GestioneSagre.Tools" Version="1.0.4" />
         <PackageReference Include="GestioneSagre.Upload" Version="1.0.3" />
