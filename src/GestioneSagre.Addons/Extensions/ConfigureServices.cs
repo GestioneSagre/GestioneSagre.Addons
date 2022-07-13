@@ -2,6 +2,7 @@
 using GestioneSagre.Email.Services.Interfaces;
 using GestioneSagre.Image.Services;
 using GestioneSagre.Image.Services.Interfaces;
+using GestioneSagre.Tools.TransactionLog;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -20,7 +21,7 @@ public static class ConfigureServices
         // Services SINGLETON
         services.AddSingleton<IEmailSenderService, MailKitEmailSender>();
         services.AddSingleton<IImagePersister, MagickNetImagePersister>();
-        //services.AddSingleton<ITransactionLogger, LocalTransactionLogger>();
+        services.AddSingleton<ITransactionLogger, LocalTransactionLogger>();
 
         return services;
     }
