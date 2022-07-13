@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);1591</NoWarn>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <TargetFrameworks>net6.0</TargetFrameworks>
+        <Authors>Angelo Pirola</Authors>
+        <Company>Gestione Sagre</Company>
+        <Product>Gestione Sagre Addons</Product>
+        <Title>Gestione Sagre Addons</Title>
+        <Description>GestioneSagre Addons components</Description>
+        <PackageTags>gestione sagre addons csharp net netcore web opensource</PackageTags>
+        <PackageIcon>Library.png</PackageIcon>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/GestioneSagre/GestioneSagre.Addons</RepositoryUrl>
+        <RepositoryBranch>master</RepositoryBranch>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\..\Library.png">
+            <Pack>True</Pack>
+            <PackagePath></PackagePath>
+        </None>
+        <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+        <None Include="..\..\LICENSE" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="GestioneSagre.Email" Version="1.0.2" />
+        <PackageReference Include="GestioneSagre.Image" Version="1.0.3" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
+        <PackageReference Include="Nerdbank.GitVersioning" Version="3.5.108">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Scrutor" Version="4.2.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
+    </ItemGroup>
+
+</Project>
