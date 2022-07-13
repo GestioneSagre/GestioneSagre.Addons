@@ -37,6 +37,7 @@
         <PackageReference Include="GestioneSagre.Email" Version="1.0.3" />
         <PackageReference Include="GestioneSagre.Image" Version="1.0.4" />
         <PackageReference Include="GestioneSagre.Tools" Version="1.0.3" />
+        <PackageReference Include="GestioneSagre.Upload" Version="1.0.1" />
         <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
         <PackageReference Include="Nerdbank.GitVersioning" Version="3.5.108">
             <PrivateAssets>all</PrivateAssets>
