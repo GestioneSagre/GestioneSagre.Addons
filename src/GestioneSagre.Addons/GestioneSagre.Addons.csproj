@@ -34,17 +34,15 @@
     </ItemGroup>
 
     <ItemGroup>
+        <PackageReference Include="GestioneSagre.BaseLibrary" Version="1.0.2" />
         <PackageReference Include="GestioneSagre.Email" Version="1.0.6" />
         <PackageReference Include="GestioneSagre.Image" Version="1.0.5" />
         <PackageReference Include="GestioneSagre.Tools" Version="1.0.4" />
         <PackageReference Include="GestioneSagre.Upload" Version="1.0.4" />
-        <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
         <PackageReference Include="Nerdbank.GitVersioning" Version="3.5.108">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="Scrutor" Version="4.2.0" />
-        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
     </ItemGroup>
 
 </Project>
