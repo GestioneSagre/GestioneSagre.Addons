@@ -1,5 +1,4 @@
-﻿using System.Reflection;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 
@@ -7,7 +6,7 @@ namespace GestioneSagre.Addons.Extensions;
 
 public static class SwaggerServices
 {
-    public static IServiceCollection AddSwaggerServices(this IServiceCollection services, IConfiguration configuration)
+    public static IServiceCollection AddSwaggerServices(this IServiceCollection services, IConfiguration configuration, string ExternalXmlPath)
     {
         services.AddSwaggerGen(config =>
         {
@@ -31,10 +30,11 @@ public static class SwaggerServices
                 }
             });
 
-            var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-            var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+            //var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+            //var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
 
-            config.IncludeXmlComments(xmlPath);
+            //config.IncludeXmlComments(xmlPath);
+            config.IncludeXmlComments(ExternalXmlPath);
         });
 
         return services;
