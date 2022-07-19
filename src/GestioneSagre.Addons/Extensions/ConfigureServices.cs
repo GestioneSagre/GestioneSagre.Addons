@@ -1,4 +1,5 @@
-﻿using GestioneSagre.Email.Services;
+﻿using GestioneSagre.Application.Versione;
+using GestioneSagre.Email.Services;
 using GestioneSagre.Email.Services.Interfaces;
 using GestioneSagre.Image.Services;
 using GestioneSagre.Image.Services.Interfaces;
@@ -20,6 +21,10 @@ public static class ConfigureServices
             .WithTransientLifetime());
 
         // Services TRANSIENT - GestioneSagre.Application
+        services.Scan(scan => scan.FromAssemblyOf<EfCoreVersioneService>()
+            .AddClasses(classes => classes.Where(type => type.Name.EndsWith("Service")))
+            .AsImplementedInterfaces()
+            .WithTransientLifetime());
 
         // Services SINGLETON
         services.AddSingleton<IEmailSenderService, MailKitEmailSender>();       //GestioneSagre.Email
