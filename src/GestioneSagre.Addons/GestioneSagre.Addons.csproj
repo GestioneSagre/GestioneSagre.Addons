@@ -34,7 +34,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="GestioneSagre.Application" Version="1.0.21" />
+        <PackageReference Include="GestioneSagre.Application" Version="1.0.22" />
         <PackageReference Include="GestioneSagre.Email" Version="1.0.19" />
         <PackageReference Include="GestioneSagre.Upload" Version="1.0.16" />
         <PackageReference Include="Nerdbank.GitVersioning" Version="3.5.108">
